@@ -35,13 +35,13 @@ try {
 await rest.put(Routes.applicationCommands(client.user.id), {
 body: await client.commands,
 });
-console.log('\x1b[36m%s\x1b[0m', '|    🚀 Commands Loaded successfully!')
+console.log('\x1b[36m%s\x1b[0m', '|    🚀 Komutlar başarıyla yüklendi!')
 } catch (err) {
-console.log('\x1b[36m%s\x1b[0m', '|    ❌ Commands Failed To Load!');
+console.log('\x1b[36m%s\x1b[0m', '|    ❌ Komutlar yüklenemedi!');
 }
 })();
 
-console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}`);
+console.log('\x1b[32m%s\x1b[0m', `|    🌼 Giriş yapıldı! ${client.user.username}`);
 
 const serverCount = client.guilds.cache.size;
 setInterval(() => client.user.setActivity({ 
